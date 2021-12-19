@@ -1,0 +1,59 @@
+/*-----------------------------------------
+    Settings Content
+-----------------------------------------*/
+
+.theme-light .contentColumn-2hrIYH *
+{
+    visibility: hidden;
+}
+
+/* Make things visible */
+.theme-light [role="radiogroup"] *
+{
+    visibility: visible;
+}
+
+/* Display specific disabled Divs */
+.theme-light [role="radiogroup"],
+.theme-light [role="radiogroup"] *
+{
+    display: block;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+
+/* Header */
+.selected-3s45Ha[aria-controls="appearance-tab"]:after
+{
+    content: "Discord Theme";
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--font-display);
+
+    position: fixed;
+    left: 282px;
+    top: 84px;
+}
+
+/* Hide everything except the themes we want */
+.theme-light [role="radiogroup"]
+{
+    padding-bottom: 100vh;
+
+    position: relative;
+    bottom: 360px;
+}
+
+/* Radio Bar Length */
+.theme-light [role="radiogroup"] .radioBar-bMNUI-
+{
+    height: 46px;
+}
+
+/* Text Positioning */
+.theme-light [role="radiogroup"] .info-3LOr12
+{
+    position: relative;
+    left: 32px;
+    bottom: 21px;
+}

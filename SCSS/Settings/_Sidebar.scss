@@ -1,6 +1,35 @@
 /*-----------------------------------------
-    Buttons
+    Sidebar
 -----------------------------------------*/
+
+/* Make things visible */
+.theme-light .sidebarRegionScroller-3MXcoP,
+.theme-light .sidebarRegion-VFTUkN,
+.theme-light .item-PXvHYJ
+{
+    visibility: visible;
+}
+
+/* Don't display these things to avoid issues with Divs */
+.theme-light [id="channelTabs-container"],
+.theme-light .item-PXvHYJ,
+.theme-light .bd-addon-card
+{
+    display: none;
+}
+
+/* Display specific disabled Divs */
+.theme-light .button-38aScr[aria-label="User settings"] *,
+.theme-light [aria-label="My account"],
+.theme-light [aria-controls="appearance-tab"],
+.theme-light [aria-controls="themes-tab"],
+.theme-light [aria-controls="authorized-apps-tab"],
+.theme-light [aria-controls="logout-tab"]
+{
+    display: block;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
 
 /* Remove Scrolling from Sidebar */
 .theme-light .sidebarRegionScroller-3MXcoP
