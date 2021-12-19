@@ -1,0 +1,66 @@
+/*-----------------------------------------
+    Themes Tab
+-----------------------------------------*/
+
+// Imports
+@use "../DiscordThemeVars" as *;
+
+// Theme Info
+$icon-image: url();
+$icon-size: 30px;
+$icon-position: 10px 12px;
+
+$icon-unicode: "🌙";
+$icon-unicode-font-size: 16px;
+
+// Versioning
+$author: "Wapour Vave#1388⠀⠀Thank You Friend! 🙂";
+$Live-author: "Wapour Vave#1388⠀⠀Thank You Friend! 🙂";
+
+/* Hide default BD Theme Icon */
+[id='Discord Dark Theme Requirement-card'] .bd-addon-header .bd-icon path,
+[id='Discord Dark Theme Requirement Live-card'] .bd-addon-header .bd-icon path
+{
+	display: none;
+}
+
+/* New Theme Icon */
+[id='Discord Dark Theme Requirement Live-card'] .bd-addon-header
+{
+	background-image: $icon-image;
+	background-repeat: no-repeat;
+	background-size: $icon-size;
+	background-position: $icon-position;
+}
+
+/* New Theme Icon Unicode */
+[id='Discord Dark Theme Requirement Live-card'] .bd-addon-header:before
+{
+	content: $icon-unicode;
+	font-size: $icon-unicode-font-size;
+
+	position: absolute;
+}
+
+/* Remove pre-existing text */
+[id='Discord Dark Theme Requirement Live-card'] .bd-version,
+[id='Discord Dark Theme Requirement Live-card'] .bd-author,
+[id='Discord Dark Theme Requirement Live-card'] .bd-title .bd-link
+{
+ 	font-size: 0px;
+}
+
+/* Discord Dark Theme Requirement Version */
+[id='Discord Dark Theme Requirement Live-card'] .bd-version:after
+{
+	font-size: 14px;
+	content: $version;
+}
+
+/* Discord Dark Theme Requirement Dev Author */
+[id='Discord Dark Theme Requirement Live-card'] .bd-author:after,
+[id='Discord Dark Theme Requirement Live-card'] .bd-title .bd-link:after
+{
+	font-size: 14px;
+	content: $Live-author;
+}

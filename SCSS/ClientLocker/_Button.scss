@@ -1,0 +1,54 @@
+/*-----------------------------------------
+    Button
+-----------------------------------------*/
+
+// Vars
+$button-width: 136px;
+$button-height: 32px;
+$button-colour: var(--brand-experiment);
+$button-colour-hover: var(--brand-experiment-560);
+
+/* Center Settings Button */
+.theme-light .button-38aScr[aria-label="User settings"]
+{
+    background-color: $button-colour;
+
+    width: $button-width;
+    margin-left: calc($button-width / 2 - $button-width);
+
+    height: $button-height;
+    margin-bottom: calc($button-height / 2 - $button-height);
+
+    padding: 2px 16px;
+
+    position: fixed;
+    left: 50vw;
+    bottom: 50vh;
+
+    visibility: visible;
+}
+
+/* Button On Hover */
+.theme-light .button-38aScr[aria-label="User settings"]:hover
+{
+    background-color: $button-colour-hover;
+}
+
+/* Settings Text */
+.theme-light .button-38aScr[aria-label="User settings"]:after
+{
+    content: "Go to Settings";
+    color: #fff;
+
+    position: relative;
+}
+
+/* Settings Cog SVG */
+.theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp path
+{
+    display: none;
+}
+.theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp
+{
+    width: 0px;
+}

@@ -1,0 +1,62 @@
+/*-----------------------------------------
+    Lock Client
+-----------------------------------------*/
+
+/* Hide everything except for whitelisted elements */
+.theme-light *
+{
+    visibility: hidden;
+}
+
+/* App Background */
+.theme-light .appMount-3lHmkl, body
+{
+    background-color: var(--background-primary);
+}
+
+/* Prevent Tab Bar Plugin causing oddities */
+.theme-light [id="channelTabs-container"],
+.theme-light .item-PXvHYJ
+{
+    display: none;
+}
+
+.theme-light .button-38aScr[aria-label="User settings"] *,
+.theme-light [aria-label="My account"],
+.theme-light [aria-controls="appearance-tab"],
+.theme-light [aria-controls="themes-tab"],
+.theme-light [aria-controls="authorized-apps-tab"],
+.theme-light [aria-controls="logout-tab"]
+{
+    display: block;
+}
+
+/* Make things visible */
+.theme-light .titleBar-AC4pGV,
+.theme-light .titleBar-AC4pGV *,
+.theme-light .bd-toast,
+.theme-light .sidebarRegionScroller-3MXcoP,
+.theme-light .sidebarRegion-VFTUkN,
+.theme-light .button-38aScr[aria-label="User settings"] *,
+.theme-light [aria-label="My account"],
+.theme-light [aria-controls="appearance-tab"],
+.theme-light [aria-controls="themes-tab"],
+.theme-light [aria-controls="authorized-apps-tab"],
+.theme-light [aria-controls="logout-tab"],
+.theme-light .fullscreenOnMobile-1bD22y *
+{
+    visibility: visible;
+}
+
+/* Give Titlebar its colour back */
+.theme-light .titleBar-AC4pGV
+{
+    background-color: var(--background-tertiary);
+    margin-top: unset;
+    padding-bottom: 4px;
+}
+.theme-light .titleBar-AC4pGV .winButton-iRh8-Z
+{
+    padding-top: 4px;
+    padding-bottom: unset;
+}
