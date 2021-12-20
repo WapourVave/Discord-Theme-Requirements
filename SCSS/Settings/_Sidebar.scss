@@ -5,9 +5,20 @@
 /* Make things visible */
 .theme-light .sidebarRegionScroller-3MXcoP,
 .theme-light .sidebarRegion-VFTUkN,
-.theme-light .item-PXvHYJ
+.theme-light .item-PXvHYJ,
+.theme-light .socialLinks-3jqNFy *,
+.theme-light .info-1VyQPT *,
+.theme-light .side-8zPYf6 .header-2RyJ0Y:nth-child(1),
+.theme-light .side-8zPYf6 .separator-gCa7yv:nth-last-child(3),
+.theme-light .side-8zPYf6 .separator-gCa7yv:nth-last-child(5)
 {
     visibility: visible;
+}
+
+/* Make things invisible that weirdly are not */
+.theme-light .bd-sidebar-header .header-2RyJ0Y
+{
+    visibility: hidden!important;
 }
 
 /* Don't display these things to avoid issues with Divs */
@@ -23,56 +34,62 @@
 .theme-light [aria-label="My account"],
 .theme-light [aria-controls="appearance-tab"],
 .theme-light [aria-controls="themes-tab"],
-.theme-light [aria-controls="authorized-apps-tab"],
-.theme-light [aria-controls="logout-tab"]
+.theme-light [aria-controls="logout-tab"],
+.theme-light .socialLinks-3jqNFy
 {
     display: block;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-/* Remove Scrolling from Sidebar */
-.theme-light .sidebarRegionScroller-3MXcoP
+/* Sidebar Height */
+.theme-light .side-8zPYf6
 {
-    pointer-events: none;
-    --scrollbar-thin-thumb: transparent;
+    height: 0px;
+}
+
+/* Seperator fixer */
+.theme-light .side-8zPYf6 .separator-gCa7yv:before
+{
+    content: "Placeholder";
+
+    font-size: 0px;
+    position: relative;
+}
+
+/* Fix Social Media Links Position */
+.theme-light .side-8zPYf6 .socialLinks-3jqNFy *
+{
+    position: relative;
+    bottom: 2px;
+}
+.theme-light .side-8zPYf6 .socialLinks-3jqNFy .bd-logo
+{
+    position: relative;
+    top: 1px;
+}
+
+/* Disable Default Header Text */
+.theme-light .side-8zPYf6 .header-2RyJ0Y
+{
+    color: transparent;
 }
 
 // /* Remove Scrolling from Sidebar */
-// .theme-light .sidebarRegion-VFTUkN
+// .theme-light .sidebarRegionScroller-3MXcoP
 // {
-//     background-color: var(--background-secondary);
-
-//     width: 100vw;
-    
-//     position: relative;
-//     left: 0;
-//     top: 0;
+//     pointer-events: none;
+//     --scrollbar-thin-thumb: transparent;
 // }
 
 /* Theme Tab Button Themeing */
 .theme-light .item-PXvHYJ
 {
-    pointer-events: all;
+    // pointer-events: all;
     width: 190px;
     font-size: 0px;
 
     // left: 0px;
-}
-
-// /* My Account Tab */
-// .theme-light [aria-label="My account"]
-// {
-//     left: 8px;
-// }
-
-/* Authorization Tab */
-.theme-light [aria-controls="authorized-apps-tab"]
-{
-    pointer-events: none;
-
-    position: absolute;
-    top: 52px;
 }
 
 /* Apperance Tab */
@@ -94,8 +111,18 @@
 {
     font-size: 16px;
 
-    position: absolute;
-    top: 200px;
+    // position: relative;
+    // top: 206px;
+}
+
+/* Logout Tab + Social Links */
+.theme-light [aria-controls="logout-tab"],
+.theme-light .socialLinks-3jqNFy,
+.theme-light .sidebarRegion-VFTUkN .info-1VyQPT,
+.theme-light .separator-gCa7yv
+{
+    position: relative;
+    bottom: 119px;
 }
 
 /* Tabs After */
@@ -123,7 +150,7 @@
 /*-------------------------------------------------------------------------------------------------------*/
 
 /* Header */
-.theme-light [aria-controls="authorized-apps-tab"]:before
+.theme-light .side-8zPYf6 .header-2RyJ0Y:nth-child(1):before
 {
     content: "THEME SETTINGS";
     font-size: 12px;
@@ -148,17 +175,4 @@
 .theme-light [aria-controls="themes-tab"]:before
 {
     content: "Custom Theme";
-}
-
-/* Footer Divider */
-.theme-light [aria-controls="authorized-apps-tab"]:after
-{
-    content: "";
-    background-color: var(--background-modifier-accent);
-
-    width: 172px;
-    height: 1px;
-
-    position: fixed;
-    top: 215px;
 }

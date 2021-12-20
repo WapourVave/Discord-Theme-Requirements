@@ -2,58 +2,75 @@
     Settings Content
 -----------------------------------------*/
 
-.theme-light .contentColumn-2hrIYH *
+/* Hide most content */
+.theme-light .children-rWhLdy *:not(.marginTop8-1DLZ1n, .marginTop8-1DLZ1n *),
+.theme-light .children-rWhLdy .title-3sZWYQ,
+.theme-light .children-rWhLdy .labelRow-16e77k,
+.theme-light .children-rWhLdy .divider-3573oO,
+.theme-light .children-rWhLdy .container-2_Tvc_.marginTop20-3TxNs6,
+.theme-light .contentColumn-2hrIYH .sectionTitle,
+.theme-light .contentColumn-2hrIYH .divider-3573oO,
+.theme-light .contentColumn-2hrIYH .marginTop40-i-78cZ:nth-last-child(1)
 {
-    visibility: hidden;
+    display: none;
 }
 
-/* Make things visible */
-.theme-light [role="radiogroup"] *
+.theme-light .contentColumn-2hrIYH
 {
-    visibility: visible;
+    height: 0px;
 }
 
-/* Display specific disabled Divs */
-.theme-light [role="radiogroup"],
-.theme-light [role="radiogroup"] *
+/* Hide Title Text */
+.theme-light .title-3sZWYQ:not(.theme-light .bd-settings-title)
 {
-    display: block;
+    font-size: 0;
+    height: 23.3px;
+    z-index: 1;
+}
+
+/* Hide Extra Radio Groups */
+.theme-light .children-rWhLdy .marginTop8-1DLZ1n:nth-child(4)
+{
+    display: none;
 }
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-/* Header */
-.selected-3s45Ha[aria-controls="appearance-tab"]:after
+/* Headers */
+.theme-light .title-3sZWYQ:not(.theme-light .bd-settings-title):before
 {
-    content: "Discord Theme";
     font-size: 20px;
     font-weight: 600;
     font-family: var(--font-display);
-
-    position: fixed;
-    left: 282px;
-    top: 84px;
 }
 
-/* Hide everything except the themes we want */
-.theme-light [role="radiogroup"]
+/* Discord Theme */
+.theme-light .title-3sZWYQ:not(.bd-settings-title):before
 {
-    padding-bottom: 100vh;
+    content: "Discord Theme";
+}
+
+/* Theme Instructions */
+.theme-light .userSettingsSecurity-3IYeMF .title-3sZWYQ:before
+{
+    content: "Theme Instructions";
+    background-color: var(--background-primary);
 
     position: relative;
-    bottom: 360px;
+    bottom: 82px;
+}
+
+/* Theme Options */
+.theme-light [role="radiogroup"]
+{
+    // padding-bottom: 100vh;
+
+    position: relative;
+    bottom: 0px;
 }
 
 /* Radio Bar Length */
 .theme-light [role="radiogroup"] .radioBar-bMNUI-
 {
     height: 46px;
-}
-
-/* Text Positioning */
-.theme-light [role="radiogroup"] .info-3LOr12
-{
-    position: relative;
-    left: 32px;
-    bottom: 21px;
 }

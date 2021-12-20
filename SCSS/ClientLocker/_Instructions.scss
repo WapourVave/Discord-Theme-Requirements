@@ -33,7 +33,7 @@
     // background-color: red;
 
     position: absolute;
-    left: -180px;
+    left: -181px;
 
     pointer-events: none;
 }
@@ -41,13 +41,13 @@
 /* Text Content */
 .theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp:before
 {
-    content: "This theme requires its users to enable Discord Dark Theme in the";
+    content: "This theme requires its users to enable Dark Theme in";
     
     bottom: 80px;
 }
 .theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp:after
 {
-    content: "Apperance Settings Tab in order to use!";
+    content: "Settings in order to use!";
 
     bottom: 60px;
 }
