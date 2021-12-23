@@ -29,7 +29,9 @@
 // Imports
 @use "BD/ThemeInfo";
 @use "License";
+@use "Animations";
 @use "BD/ThemesTab";
+@use "BD/ThemeBubbles";
 
 @use "DiscordThemeVars";
 @use "DiscordDarkThemeVars";
@@ -41,6 +43,6 @@
 
 @use "Settings/Sidebar";
 @use "Settings/Content";
-@use "Settings/CustomThemeTab"
+@use "Settings/CustomThemeTab";
 
 // .theme-light [id='Your Theme Name-card']

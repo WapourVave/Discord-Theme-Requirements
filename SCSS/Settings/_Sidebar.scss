@@ -98,6 +98,10 @@
     position: absolute;
     top: 116px;
 }
+.theme-light [aria-controls="appearance-tab"]:not(.selected-3s45Ha)
+{
+    -webkit-animation: pulse 1s infinite;
+}
 
 /* Themes Tab */
 .theme-light [aria-controls="themes-tab"]

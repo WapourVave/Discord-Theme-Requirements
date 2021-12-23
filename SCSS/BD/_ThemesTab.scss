@@ -63,3 +63,47 @@ $Live-author: "Wapour Vave#1388⠀⠀Thank You Friend! 🙂";
 	font-size: 14px;
 	content: $Live-author;
 }
+
+/*----------------------------------------------------------------------------------*/
+
+/* Hide the link buttons */
+.theme-light .bd-addon-card,
+.theme-light .bd-addon-controls
+{
+	-webkit-animation: popin 0.8s;
+}
+
+/* Allow Overflow for the Popout Bubbles */
+.theme-light .bd-addon-card,
+.theme-light .bd-addon-card *
+{
+	overflow: visible!important;
+}
+
+/* Readd the border radius because it vanishes with overflow visible */
+.theme-light .bd-addon-header
+{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+/* Allow Links to be positioned Absolutely Relative */
+.theme-light .bd-addon-button,
+.theme-light .bd-addon-views
+{
+	position: relative;
+}
+
+/* Disable Search Input */
+.theme-light .bd-search-wrapper
+{
+	pointer-events: none;
+}
+.theme-light .bd-search-wrapper svg
+{
+	fill: var(--interactive-muted);
+}
+.theme-light .bd-search-wrapper .bd-search
+{
+	color: var(--text-muted);
+}

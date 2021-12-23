@@ -24,7 +24,8 @@
 .theme-light .fullscreenOnMobile-1bD22y *,
 .theme-light .floating-window *,
 .theme-light .contentColumn-2hrIYH *,
-.theme-light .contentRegionScroller-26nc1e
+.theme-light .contentRegionScroller-26nc1e,
+.theme-light .notice-3bPHh- *
 {
     visibility: visible;
 }
@@ -40,4 +41,10 @@
 {
     padding-top: 4px;
     padding-bottom: unset;
+}
+
+/* Don't let the user click the other buttons at the bottom */
+.theme-light .container-3baos1 .flex-1xMQg5 *:not([aria-label="User settings"])
+{
+    pointer-events: none;
 }

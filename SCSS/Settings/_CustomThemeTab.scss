@@ -20,15 +20,71 @@
 
 /*-------------------------------------------------------------------------------------------------------*/
 
-// /* Header */
-// .selected-3s45Ha[aria-controls="appearance-tab"]:after
+// /* Info Bubbles */
+// .theme-light .bd-addon-button > [href="https://github.com/WapourVave"]:before
 // {
-//     content: "Discord Theme";
-//     font-size: 20px;
-//     font-weight: 600;
-//     font-family: var(--font-display);
+//     -webkit-animation: popout-bubble-website 0.1s;
 
-//     position: fixed;
-//     left: 282px;
-//     top: 84px;
+// 	content: "";
+//     width: 0px;
+//     color: var(--text-normal);
+//     font-weight: 500;
+// 	font-size: 14px;
+
+//     background-color: var(--background-floating);
+//     box-shadow: var(--elevation-high);
+//     border-radius: 6px;
+
+// 	padding: 0px;
+// 	padding-right: 0px;
+// 	padding-left: 0px;
+
+//     position: absolute;
+// 	left: -50px; 
+// 	bottom: 45px;
+
+//     pointer-events: none;
+// 	opacity: 0;
 // }
+
+// /* Bubble Hover */
+// .theme-light .bd-addon-list > [href="https://github.com/WapourVave"]:hover:before
+// {
+//     -webkit-animation: popin-bubble-website 0.1s;
+
+// 	content: "Theme Developer";
+// 	width: 105px;
+
+// 	padding: 9px;
+// 	padding-right: 12px;
+// 	padding-left: 12px;
+
+// 	opacity: 1;
+// }
+
+// /* Badge Info Triangle */
+// .theme-light .bd-addon-list > [href="https://github.com/WapourVave"]:after
+// {
+//     -webkit-animation: popout-triangle-website 0.1s;
+
+//     content: "";
+
+// 	border-width: 0px 0px 0 0px;
+// 	border-style: solid;
+// 	border-color: var(--background-floating) transparent transparent transparent;
+
+//     position: absolute;
+//     bottom: 42px;
+//     left: -2px;
+
+//     pointer-events: none;
+// }
+
+// /* Triangle Hover */
+// .theme-light .bd-addon-list > [href="https://github.com/WapourVave"]:hover:after
+// {
+//     content: "";
+    
+// 	border-width: 10px 11px 0 11px;
+// }
+

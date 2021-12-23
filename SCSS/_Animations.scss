@@ -1,0 +1,311 @@
+/*-----------------------------------------
+	Animations
+-----------------------------------------*/
+
+.theme-light
+{
+    --DiscordThemeRequirement-bubble-popin-time: 0.1s;
+    --DiscordThemeRequirement-bubble-padding: 12px;
+
+    --DiscordThemeRequirement-website-width: 50px;
+    --DiscordThemeRequirement-source-width: 40px;
+    --DiscordThemeRequirement-support-server-width: 88px;
+    --DiscordThemeRequirement-donate-width: 43px;
+    --DiscordThemeRequirement-patreon-width: 46px;
+
+    --DiscordThemeRequirement-settings-width: 50px;
+    --DiscordThemeRequirement-edit-width: 50px;
+    --DiscordThemeRequirement-delete-width: 50px;
+
+    --DiscordThemeRequirement-list-view-width: 54px;
+    --DiscordThemeRequirement-grid-view-width: 59px;
+}
+
+@keyframes pulse
+{
+	0% { box-shadow: 0 0 0 0 #faa41b8a; }
+    70% { box-shadow: 0 0 0 10px #1e1e1e00; }
+    100% { box-shadow: 0 0 0 0 #1e1e1e00; }
+}
+
+/*-----------------------------------------
+    Website
+-----------------------------------------*/ 
+
+
+
+@keyframes popin-bubble-website
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Website"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-website-width); }
+    100% { opacity: 1; transform: scale(1); content: "Website"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-website-width); }
+}
+
+@keyframes popout-bubble-website
+{
+    0% { opacity: 1; transform: scale(1); content: "Website"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-website-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Website"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-website-width); }
+}
+
+/*-----------------------------------------
+    Source
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-source
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Source"; padding: 9px;
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-source-width); }
+    100% { opacity: 1; transform: scale(1); content: "Source"; padding: 9px;
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-source-width); }
+}
+
+@keyframes popout-bubble-source
+{
+    0% { opacity: 1; transform: scale(1); content: "Source"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-source-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Source"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-source-width); }
+}
+
+/*-----------------------------------------
+    Support Server
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-support-server
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Support Server"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-support-server-width); }
+    100% { opacity: 1; transform: scale(1); content: "Support Server"; 
+        padding: 9px; padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-support-server-width); }
+}
+
+@keyframes popout-bubble-support-server
+{
+    0% { opacity: 1; transform: scale(1); content: "Support Server"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-support-server-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Support Server"; 
+        padding: 9px; padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-support-server-width); }
+}
+
+/*-----------------------------------------
+    Donate
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-donate
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Donate"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-donate-width); }
+    100% { opacity: 1; transform: scale(1); content: "Donate"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-donate-width); }
+}
+
+@keyframes popout-bubble-donate
+{
+    0% { opacity: 1; transform: scale(1); content: "Donate"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-donate-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Donate"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-donate-width); }
+}
+
+/*-----------------------------------------
+    Patreon
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-patreon
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Patreon"; padding: 9px; padding-right: 
+        var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-patreon-width); }
+    100% { opacity: 1; transform: scale(1); content: "Patreon"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-patreon-width); }
+}
+
+@keyframes popout-bubble-patreon
+{
+    0% { opacity: 1; transform: scale(1); content: "Patreon"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-patreon-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Patreon"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-patreon-width); }
+}
+
+/*-----------------------------------------
+    Settings
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-settings
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Settings"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-settings-width); }
+    100% { opacity: 1; transform: scale(1); content: "Settings"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-settings-width); }
+}
+
+@keyframes popout-bubble-settings
+{
+    0% { opacity: 1; transform: scale(1); content: "Settings"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-settings-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Settings"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-settings-width); }
+}
+
+/*-----------------------------------------
+    Edit
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-edit
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Edit"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-edit-width); }
+    100% { opacity: 1; transform: scale(1); content: "Edit"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-edit-width); }
+}
+
+@keyframes popout-bubble-edit
+{
+    0% { opacity: 1; transform: scale(1); content: "Edit"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-edit-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Edit"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-edit-width); }
+}
+
+/*-----------------------------------------
+    Delete
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-delete
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Delete"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-delete-width); }
+    100% { opacity: 1; transform: scale(1); content: "Delete"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-delete-width); }
+}
+
+@keyframes popout-bubble-delete
+{
+    0% { opacity: 1; transform: scale(1); content: "Delete"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-delete-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Delete"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-delete-width); }
+}
+
+/*-----------------------------------------
+    List View
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-list-view
+{
+    0% { opacity: 0; transform: scale(0.9); content: "List View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-list-view-width); }
+    100% { opacity: 1; transform: scale(1); content: "List View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-list-view-width); }
+}
+
+@keyframes popout-bubble-list-view
+{
+    0% { opacity: 1; transform: scale(1); content: "List View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-list-view-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "List View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-list-view-width); }
+}
+
+/*-----------------------------------------
+    Grid View
+-----------------------------------------*/ 
+
+@keyframes popin-bubble-grid-view
+{
+    0% { opacity: 0; transform: scale(0.9); content: "Grid View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-grid-view-width); }
+    100% { opacity: 1; transform: scale(1); content: "Grid View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-grid-view-width); }
+}
+
+@keyframes popout-bubble-grid-view
+{
+    0% { opacity: 1; transform: scale(1); content: "Grid View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-grid-view-width); }
+    100% { opacity: 0; transform: scale(0.9); content: "Grid View"; padding: 9px; 
+        padding-right: var(--DiscordThemeRequirement-bubble-padding);
+        padding-left: var(--DiscordThemeRequirement-bubble-padding); 
+        width: var(--DiscordThemeRequirement-grid-view-width); }
+}

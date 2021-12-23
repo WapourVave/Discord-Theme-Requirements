@@ -11,9 +11,13 @@
     color: #fff;
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 
+    width: 180px;
+
+    /* Reposition to center of badge */
     position: absolute;
-    bottom: 110px;
+    bottom: 111px;
     
     pointer-events: none;
 }
@@ -32,6 +36,7 @@
     // height: 10px;
     // background-color: red;
 
+    /* Reposition to center of badge */
     position: absolute;
     left: -181px;
 
@@ -41,7 +46,7 @@
 /* Text Content */
 .theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp:before
 {
-    content: "This theme requires its users to enable Dark Theme in";
+    content: "This theme requires its users to enable Dark theme in";
     
     bottom: 80px;
 }
@@ -49,5 +54,5 @@
 {
     content: "Settings in order to use!";
 
-    bottom: 60px;
+    bottom: 58px;
 }

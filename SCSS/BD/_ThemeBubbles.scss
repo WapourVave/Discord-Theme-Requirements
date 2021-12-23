@@ -1,0 +1,344 @@
+/*-----------------------------------------
+    Theme Button Bubbles
+-----------------------------------------*/
+
+$website-href: "https://github.com/WapourVave";
+$source-href: "https://github.com/WapourVave/Discord-Theme-Requirements";
+$support-server-href: "Test Invite";
+$donate-href: "Test Donation";
+$patreon-href: "Test Patreon";
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$website-href}"]:before,
+.theme-light .bd-link-website[href="#{$source-href}"]:before,
+.theme-light .bd-link-website[href="#{$support-server-href}"]:before,
+.theme-light .bd-link-website[href="#{$donate-href}"]:before,
+.theme-light .bd-link-website[href="#{$patreon-href}"]:before,
+.theme-light .bd-controls .bd-addon-button:before,
+.theme-light .bd-addon-views [aria-label="List View"]:before,
+.theme-light .bd-addon-views [aria-label="Grid View"]:before
+{
+	content: "";
+    width: 0px;
+    height: 12px;
+    color: var(--text-normal);
+    font-weight: 500;
+	font-size: 14px;
+	text-align: center;
+
+    background-color: var(--background-floating);
+    box-shadow: var(--elevation-high);
+    border-radius: 6px;
+
+	padding: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+
+    position: absolute;
+	bottom: 32px;
+
+    pointer-events: none;
+	opacity: 0;
+}
+.theme-light .bd-controls .bd-addon-button:before
+{
+    height: 17px;
+    bottom: 36px;
+}
+.theme-light .bd-addon-views [aria-label="List View"]:before,
+.theme-light .bd-addon-views [aria-label="Grid View"]:before
+{
+    height: 16px;
+    bottom: 34px;
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$website-href}"]:hover:before,
+.theme-light .bd-link-website[href="#{$source-href}"]:hover:before,
+.theme-light .bd-link-website[href="#{$support-server-href}"]:hover:before,
+.theme-light .bd-link-website[href="#{$donate-href}"]:hover:before,
+.theme-light .bd-link-website[href="#{$patreon-href}"]:hover:before,
+.theme-light .bd-controls .bd-addon-button:hover:before,
+.theme-light .bd-addon-views [aria-label="List View"]:hover:before,
+.theme-light .bd-addon-views [aria-label="Grid View"]:hover:before
+{
+	padding: 9px;
+	padding-right: var(--DiscordThemeRequirement-bubble-padding);
+	padding-left: var(--DiscordThemeRequirement-bubble-padding);
+
+	opacity: 1;
+}
+
+/* Badge Info Triangle */
+.theme-light .bd-link-website[href="#{$website-href}"]:after,
+.theme-light .bd-link-website[href="#{$source-href}"]:after,
+.theme-light .bd-link-website[href="#{$support-server-href}"]:after,
+.theme-light .bd-link-website[href="#{$donate-href}"]:after,
+.theme-light .bd-link-website[href="#{$patreon-href}"]:after,
+.theme-light .bd-controls .bd-addon-button:after,
+.theme-light .bd-addon-views [aria-label="List View"]:after,
+.theme-light .bd-addon-views [aria-label="Grid View"]:after
+{
+    -webkit-animation: popout-triangle var(--DiscordThemeRequirement-bubble-popin-time);
+
+    content: "";
+
+	border-width: 0px 0px 0 0px;
+	border-style: solid;
+	border-color: var(--background-floating) transparent transparent transparent;
+
+    position: absolute;
+    bottom: 27px;
+    left: 3px;
+
+    pointer-events: none;
+}
+.theme-light .bd-controls .bd-addon-button:after
+{
+    bottom: 31px;
+    left: 10px;
+}
+.theme-light .bd-addon-views [aria-label="List View"]:after,
+.theme-light .bd-addon-views [aria-label="Grid View"]:after
+{
+    bottom: 29px;
+}
+
+/* Triangle Hover */
+.theme-light .bd-link-website[href="#{$website-href}"]:hover:after,
+.theme-light .bd-link-website[href="#{$source-href}"]:hover:after,
+.theme-light .bd-link-website[href="#{$support-server-href}"]:hover:after,
+.theme-light .bd-link-website[href="#{$donate-href}"]:hover:after,
+.theme-light .bd-link-website[href="#{$patreon-href}"]:hover:after,
+.theme-light .bd-controls .bd-addon-button:hover:after,
+.theme-light .bd-addon-views [aria-label="List View"]:hover:after,
+.theme-light .bd-addon-views [aria-label="Grid View"]:hover:after
+{
+    -webkit-animation: popin-triangle var(--DiscordThemeRequirement-bubble-popin-time);
+	
+    content: "";
+    
+	border-width: 6px 6px 0 6px;
+}
+
+/*-----------------------------------------
+    Website
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$website-href}"]:before
+{
+    -webkit-animation: popout-bubble-website var(--DiscordThemeRequirement-bubble-popin-time);
+    
+    left: -28px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$website-href}"]:hover:before
+{
+    -webkit-animation: popin-bubble-website var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Website";
+	width: var(--DiscordThemeRequirement-website-width);
+}
+
+/*-----------------------------------------
+    Source
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$source-href}"]:before
+{
+    -webkit-animation: popout-bubble-source var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -24px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$source-href}"]:hover:before
+{
+    -webkit-animation: popin-bubble-source var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Source";
+	width: var(--DiscordThemeRequirement-source-width);
+}
+
+/*-----------------------------------------
+    Support Server
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$support-server-href}"]:before
+{
+    -webkit-animation: popout-bubble-support-server var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -47px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$support-server-href}"]:hover:before
+{
+    -webkit-animation: popin-bubble-support-server var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Support Server";
+	width: var(--DiscordThemeRequirement-support-server-width);
+}
+
+/*-----------------------------------------
+    Donate
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$donate-href}"]:before
+{
+    -webkit-animation: popout-bubble-donate var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -25px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$donate-href}"]:hover:before
+{
+    -webkit-animation: popin-bubble-donate var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Donate";
+	width: var(--DiscordThemeRequirement-donate-width);
+}
+
+/*-----------------------------------------
+    Patreon
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-link-website[href="#{$patreon-href}"]:before
+{
+    -webkit-animation: popout-bubble-patreon var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -26px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-link-website[href="#{$patreon-href}"]:hover:before
+{
+    -webkit-animation: popin-bubble-patreon var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Patreon";
+	width: var(--DiscordThemeRequirement-patreon-width);
+}
+
+/*-----------------------------------------
+    Settings
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .theme-settings-button:before
+{
+    -webkit-animation: popout-bubble-settings var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -21px;
+}
+
+/* Bubble Hovered */
+.theme-light .theme-settings-button:hover:before
+{
+    -webkit-animation: popin-bubble-settings var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Settings";
+	width: var(--DiscordThemeRequirement-settings-width);
+}
+
+/*-----------------------------------------
+    Edit
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-controls .bd-addon-button:not(.theme-settings-button, .bd-button-danger):before
+{
+    -webkit-animation: popout-bubble-edit var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -21px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-controls .bd-addon-button:not(.theme-settings-button, .bd-button-danger):hover:before
+{
+    -webkit-animation: popin-bubble-edit var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Edit";
+	width: var(--DiscordThemeRequirement-edit-width);
+}
+
+/*-----------------------------------------
+    Delete
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-button-danger:before
+{
+    -webkit-animation: popout-bubble-delete var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -21px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-button-danger:hover:before
+{
+    -webkit-animation: popin-bubble-delete var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Delete";
+	width: var(--DiscordThemeRequirement-delete-width);
+}
+
+/*-----------------------------------------
+    List View
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-addon-views [aria-label="List View"]:before
+{
+    -webkit-animation: popout-bubble-list-view var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: -25px; 
+}
+
+/* Bubble Hovered */
+.theme-light .bd-addon-views [aria-label="List View"]:hover:before
+{
+    -webkit-animation: popin-bubble-list-view var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "List View";
+	width: var(--DiscordThemeRequirement-list-view-width);
+}
+
+/* Triangle */
+.theme-light .bd-addon-views [aria-label="List View"]:after
+{
+    left: 8px;
+}
+
+/*-----------------------------------------
+    Grid View
+-----------------------------------------*/
+
+/* Info Bubble */
+.theme-light .bd-addon-views [aria-label="Grid View"]:before
+{
+    -webkit-animation: popout-bubble-grid-view var(--DiscordThemeRequirement-bubble-popin-time);
+
+    left: 5px;
+}
+
+/* Bubble Hovered */
+.theme-light .bd-addon-views [aria-label="Grid View"]:hover:before
+{
+    -webkit-animation: popin-bubble-grid-view var(--DiscordThemeRequirement-bubble-popin-time);
+
+	content: "Grid View";
+	width: var(--DiscordThemeRequirement-grid-view-width);
+}
+
+/* Triangle */
+.theme-light .bd-addon-views [aria-label="Grid View"]:after
+{
+    left: 41px;
+}
