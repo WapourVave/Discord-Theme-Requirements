@@ -22,22 +22,20 @@
     pointer-events: none;
 }
 
-/* Header Image */
-.theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp svg
+/* Discord Wavey Background in reverse */
+.theme-light .container-2lgZY8:before
 {
-    background-image: url(https://discord.com/assets/e0989b9d43cd9ca4417b49f4f8fbebc6.svg);
-    background-repeat: no-repeat;    
+    content: "";
+    
+    background-color: var(--background-wavey);
+    background-image: url(https://raw.githubusercontent.com/WapourVave/Discord-Theme-Requirements/main/Assets/Client%20Cover/ClientCover-Smaller.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
-    border-radius: 0;
-
-    width: 404px;
-    height: 202px;
-
-    position: absolute;
-    right: -134px;
-    bottom: 156px;
-
-    visibility: visible;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }
 
 /* Content Global */
