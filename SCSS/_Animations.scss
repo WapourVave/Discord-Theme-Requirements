@@ -2,25 +2,6 @@
 	Animations
 -----------------------------------------*/
 
-.theme-light
-{
-    --DiscordThemeRequirement-bubble-popin-time: 0.1s;
-    --DiscordThemeRequirement-bubble-padding: 12px;
-
-    --DiscordThemeRequirement-website-width: 50px;
-    --DiscordThemeRequirement-source-width: 40px;
-    --DiscordThemeRequirement-support-server-width: 88px;
-    --DiscordThemeRequirement-donate-width: 43px;
-    --DiscordThemeRequirement-patreon-width: 46px;
-
-    --DiscordThemeRequirement-settings-width: 50px;
-    --DiscordThemeRequirement-edit-width: 50px;
-    --DiscordThemeRequirement-delete-width: 50px;
-
-    --DiscordThemeRequirement-list-view-width: 54px;
-    --DiscordThemeRequirement-grid-view-width: 59px;
-}
-
 @keyframes pulse
 {
 	0% { box-shadow: 0 0 0 0 #faa41b8a; }

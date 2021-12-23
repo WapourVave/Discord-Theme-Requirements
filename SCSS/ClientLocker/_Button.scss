@@ -12,6 +12,8 @@ $button-colour-hover: var(--brand-experiment-560);
 /* Center Settings Button */
 .theme-light .button-38aScr[aria-label="User settings"]
 {
+    // -webkit-animation: pulse 1s infinite;
+
     background-color: $button-colour;
 
     width: $button-width;
