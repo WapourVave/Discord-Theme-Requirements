@@ -4,6 +4,24 @@
 
 @use "../DiscordDarkThemeVars" as *;
 
+/* Header Image */
+.theme-light .button-38aScr[aria-label="User settings"] .contents-18-Yxp svg
+{
+    background-image: url(https://discord.com/assets/e0989b9d43cd9ca4417b49f4f8fbebc6.svg);
+    background-repeat: no-repeat;    
+
+    border-radius: 0;
+
+    width: 404px;
+    height: 202px;
+
+    position: absolute;
+    right: -134px;
+    bottom: 156px;
+
+    visibility: visible;
+}
+
 /* Instructions Header */
 .theme-light .button-38aScr[aria-label="User settings"]:before
 {

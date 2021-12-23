@@ -22,7 +22,7 @@ $button-colour-hover: var(--brand-experiment-560);
 
     position: fixed;
     left: 50vw;
-    bottom: 50vh;
+    bottom: calc(50vh - 100px);
 
     visibility: visible;
 }

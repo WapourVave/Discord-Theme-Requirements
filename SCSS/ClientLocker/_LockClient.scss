@@ -25,7 +25,10 @@
 .theme-light .floating-window *,
 .theme-light .contentColumn-2hrIYH *,
 .theme-light .contentRegionScroller-26nc1e,
-.theme-light .notice-3bPHh- *
+.theme-light .notice-3bPHh- *,
+.theme-light .errorPage-u8SYh4,
+.theme-light .errorPage-u8SYh4 *,
+.theme-light .container-2lgZY8
 {
     visibility: visible;
 }
@@ -34,17 +37,42 @@
 .theme-light .titleBar-AC4pGV
 {
     background-color: var(--background-tertiary);
-    margin-top: unset;
-    padding-bottom: 4px;
+    // margin-top: unset;
+    // padding-bottom: 4px;
 }
-.theme-light .titleBar-AC4pGV .winButton-iRh8-Z
+
+/* Restore Titlebar Resizing */
+.theme-light .titleBar-AC4pGV:before
 {
-    padding-top: 4px;
-    padding-bottom: unset;
+    content: "";
+
+    background-color: var(--background-tertiary);
+    
+    width: 100vw;
+    height: 4px;
+
+    position: fixed;
+    top: 0;
 }
 
 /* Don't let the user click the other buttons at the bottom */
 .theme-light .container-3baos1 .flex-1xMQg5 *:not([aria-label="User settings"])
 {
     pointer-events: none;
+}
+
+/* Discord Wavey Background in reverse */
+.theme-light .container-2lgZY8:before
+{
+    content: "";
+    
+    background-color: var(--background-primary);
+    background-image: url(https://discord.com/assets/86548cb347b5acfb41bcb328c89b9bdc.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
 }

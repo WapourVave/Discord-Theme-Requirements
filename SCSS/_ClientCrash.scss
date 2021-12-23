@@ -1,0 +1,24 @@
+/*-----------------------------------------
+    Client Crash
+-----------------------------------------*/
+
+// Top Image
+// url(https://discord.com/assets/86548cb347b5acfb41bcb328c89b9bdc.svg)
+
+/* Image */
+.theme-light .errorPage-u8SYh4 .image-3zK3Wt
+{
+    visibility: hidden;
+}
+.theme-light .errorPage-u8SYh4 .image-3zK3Wt:before
+{
+    content: "";
+
+    width: 254px;
+    height: 154px;
+
+    visibility: visible;
+    background-image: url(https://discord.com/assets/5656f17248cf747f56433a1d60c8c1bf.svg);
+
+    position: absolute;
+}
