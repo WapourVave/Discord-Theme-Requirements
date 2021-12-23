@@ -60,3 +60,19 @@
 {
     pointer-events: none;
 }
+
+/* Discord Wavey Background in reverse */
+.theme-light .container-2lgZY8:before
+{
+    content: "";
+    
+    background-color: var(--background-wavey);
+    background-image: url(https://raw.githubusercontent.com/WapourVave/Discord-Theme-Requirements/main/Assets/Client%20Cover/ClientCover-Final.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
